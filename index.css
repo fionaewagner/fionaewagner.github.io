@@ -8,6 +8,10 @@ body {
   padding: 1rem;
   font-family: 'Source Code Pro', monospace;
  }
+ header{
+  margin-bottom: 5%;
+  margin-top: 2%;
+ }
  .sm{
   font-size: 12px;
   margin-top: -10px;
@@ -30,6 +34,10 @@ body {
   grid-column-end: 6;
   font-weight: bold;
   line-height: 170%;
+  background-color: #e2e2e2;
+  margin-right: 10% ;
+  padding: 1%;
+  border-radius: 25px;
  }
  .nut-title{
   grid-row-start: 1;
@@ -47,13 +55,43 @@ body {
   padding: 20px;
   width: 330px;
   height: 180px;
+  border: 2px solid rgb(22, 22, 22);
 }
+
+.bug-img {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border-radius: 25px;
+  background: url("./images/Screenshot (177).png");
+  background-size: 100%;
+  padding: 20px;
+  width: 330px;
+  height: 180px;
+  border: 2px solid rgb(22, 22, 22);
+}
+
+.bug-text {
+  grid-column-start: 3;
+  margin-left: 2%;
+  grid-column-end: 6;
+  font-weight: bold;
+  line-height: 170%;
+  background-color: #e2e2e2;
+  margin-right: 10% ;
+  padding: 1%;
+  border-radius: 25px;
+ }
  .palms-text {
   grid-row-start: 2;
   grid-column-start: 1;
   grid-column-end: 6;
+  margin-right: 10% ;
+  padding: 1%;
+  border-radius: 25px;
   font-weight: bold;
   line-height: 170%;
+  background-color: #e2e2e2;
  }
  .palms-title{
   grid-row-start: 1;
@@ -76,6 +114,7 @@ body {
   padding: 20px;
   width: 330px;
   height: 180px;
+  border: 2px solid rgb(22, 22, 22);
 }
 
 .course-title{
@@ -84,41 +123,36 @@ body {
   grid-column-end: 5;
 }
 
-
-
-
-
-button {
-  -webkit-appearance: none;
-  background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
-  background-size: 500%;
-  border: none;
-  border-radius: 5rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  color: rgb(0, 0, 0);
-  cursor: pointer;
-  font-size: 1.5em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  height: 5rem;
-  letter-spacing: .05em;
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20rem; }
-
-button:hover {
-  animation-name: gradient;
-  -webkit-animation-name: gradient;
-  animation-duration: 2s;
-  -webkit-animation-duration: s;
-  animation-iteration-count: 1;
-  -webkit-animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards; }
+.subtitle {
+  margin: 0 0 2em 0;
+}
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;
+  font-size: 40px;  
+  font-weight: bold;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  top: 0;
+  width: 500px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
 
   .container{
     display: grid;
